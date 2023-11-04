@@ -1,19 +1,16 @@
-import Header from './Header';
-import Speakers from './Speakers';
-import Layout from './Layout';
-import { AuthProvider } from '../contexts/AuthContext';
+import Header from "./Header";
+import Speakers from "./Speakers";
+import Layout from "./Layout";
 
 function App() {
-	return (
-		<AuthProvider initialLoggedInUser="Ronald">
-			<Layout startingTheme='light'>
-				<div>
-					<Header />
-					<Speakers />
-				</div>
-			</Layout>
-		</AuthProvider>
-	);
+  return (
+    <Layout startingTheme="light">
+      <div>
+        <Header />
+        <Speakers />
+      </div>
+    </Layout>
+  );
 }
 
 export default App;

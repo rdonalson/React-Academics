@@ -1,22 +1,6 @@
 {
   "speakers": [
     {
-      "id": "47344",
-      "first": "Andy",
-      "last": "Anderson",
-      "bio": "Bio not entered yet",
-      "sessions": [
-        {
-          "id": "88888",
-          "title": "New Session For Andy",
-          "room": {
-            "name": "Main Ball Room"
-          },
-          "eventYear": "2019"
-        }
-      ]
-    },
-    {
       "id": "1269",
       "first": "Arun",
       "last": "Gupta",
