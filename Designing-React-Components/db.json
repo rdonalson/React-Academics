@@ -5,9 +5,9 @@
       "first": "Arun",
       "last": "Gupta",
       "company": "Amazon",
-      "bio": "Arun Gupta is a Principal Open Source Technologist at Amazon Web Services. ",
+      "xbio": "Arun Gupta is a Principal Open Source Technologist at Amazon Web Services. ",
       "twitterHandle": "arungupta",
-      "favorite": true,
+      "favorite": false,
       "sessions": [
         {
           "id": "32",
@@ -380,7 +380,7 @@
       "company": "Printform Corporation",
       "bio": "Mark is a globally recognized expert on digital printing for industrial and packaging applications.",
       "twitterHandle": "mark__a",
-      "favorite": true,
+      "favorite": false,
       "sessions": [
         {
           "id": "676",
