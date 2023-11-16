@@ -180,6 +180,10 @@ div[role="alert"] {
   color: red;
 }
 
+a.active {
+  color: purple;
+}
+
 /* input[type="submit"] {
   margin-top: 20px;
 } */

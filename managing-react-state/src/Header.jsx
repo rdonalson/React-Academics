@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-const activeStyle = {
-  color: "purple",
-}
-
 export default function Header() {
 	return (
 		<header>
@@ -14,14 +10,18 @@ export default function Header() {
 						<Link to='/'>
 							<img alt='Carved Rock Fitness' src='/images/logo.png' />
 						</Link>
-          </li>
-          <li>
-            <NavLink activeStyle={activeStyle} to='/shoes' >Shoes</NavLink>
-          </li>
-          <li>
-            <NavLink activeStyle={activeStyle} to='/cart' >Cart</NavLink>
-          </li>
-        </ul>
+					</li>
+					<li>
+						<NavLink  to='/shoes'>
+							Shoes
+						</NavLink>
+					</li>
+					<li>
+						<NavLink  to='/cart'>
+							Cart
+						</NavLink>
+					</li>
+				</ul>
 			</nav>
 		</header>
 	);

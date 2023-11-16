@@ -79,6 +79,16 @@
       "city": "Cumming, GA",
       "country": "USA",
       "id": 4
+    },
+    {
+      "city": "cumming",
+      "country": "USA",
+      "id": 5
+    },
+    {
+      "city": "Buford",
+      "country": "United Kingdom",
+      "id": 6
     }
   ]
 }
