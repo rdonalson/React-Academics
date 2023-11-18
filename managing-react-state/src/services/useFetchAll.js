@@ -28,7 +28,6 @@ export default function useFetchAll(urls) {
         setError(e);
       })
       .finally(() => setLoading(false));
-    // eslint-disable-next-line
   }, [urls]);
 
   return { data, loading, error };
