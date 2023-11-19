@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { saveShippingAddress } from './services/shippingService';
+import { useCart } from './cartContext';
 
 const STATUS = {
 	IDLE: 'IDLE',
@@ -14,7 +15,8 @@ const emptyAddress = {
 	country: '',
 };
 
-export default function Checkout({ cart, dispatch }) {
+export default function Checkout() {
+	const { dispatch } = useCart();
 	const [address, setAddress] = useState(emptyAddress);
 	const [status, setStatus] = useState(STATUS.IDLE);
 	const [saveError, setSaveError] = useState(null);
@@ -24,14 +26,15 @@ export default function Checkout({ cart, dispatch }) {
 	const errors = getErrors(address);
 	const isValid = Object.keys(errors).length === 0;
 
-	function handleChange(e) {
-		setAddress((curAddress) => {
-			return {
-				...curAddress,
-				[e.target.id]: e.target.value,
-			};
-		});
-	}
+  function handleChange(e) {
+    e.persist(); // persist the event
+    setAddress((curAddress) => {
+      return {
+        ...curAddress,
+        [e.target.id]: e.target.value,
+      };
+    });
+  }
 
 	function handleBlur(event) {
 		setTouched((cur) => {
@@ -60,7 +63,7 @@ export default function Checkout({ cart, dispatch }) {
 		const result = {};
 		if (!address.city) result.city = 'City is required';
 		if (!address.country) result.country = 'Country is required';
-		return result;
+		return result;h
 	}
 
 	if (saveError) throw saveError;
